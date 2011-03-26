@@ -1,0 +1,36 @@
+[
+  {
+    "pk": 1, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "rupert", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": true, 
+      "is_staff": true, 
+      "last_login": "2011-03-02 21:06:36", 
+      "groups": [], 
+      "user_permissions": [], 
+      "password": "sha1$5be6e$1614686fc42633350e08a5bb86d1b94a2b073b1b", 
+      "email": "rupert@neontribe.co.uk", 
+      "date_joined": "2011-03-02 21:06:36"
+    }
+  },
+  {
+    "pk": "d8580e56427d7fd6c6216860e9e8dbd9", 
+    "model": "sessions.session", 
+    "fields": {
+      "expire_date": "2011-04-08 16:32:24", 
+      "session_data": "MDQ4YmVmODJmNmI5MTk5ZjA3ZTI5NTEzZDA1ZjdlYTc1YjFiZmFlYTqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAXUu\n"
+    }
+  },
+  {
+  	"pk": 1, 
+	"model": "sites.site", 
+	"fields": {
+		"domain": "localhost:8080", 
+		"name": "LooQuest"
+	}
+   }
+]

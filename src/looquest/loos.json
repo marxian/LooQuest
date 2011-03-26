@@ -1,0 +1,64 @@
+[
+  {
+    "pk": 1, 
+    "model": "loos.loo", 
+    "fields": {
+      "lat": 52.682532189343902, 
+      "lon": -1.9348329305648804, 
+      "name": "Sankey's Corner, Chase Terrace"
+    }
+  },
+  {
+    "pk": 2, 
+    "model": "loos.loo", 
+    "fields": {
+      "lat": 52.66961303357292, 
+      "lon": -1.9340980052947998, 
+      "name": "High Street, Chasetown"
+    }
+  },
+  {
+    "pk": 3, 
+    "model": "loos.loo", 
+    "fields": {
+      "lat": 52.67836933380704, 
+      "lon": -1.90687894821167, 
+      "name": "Swan Island, Burntwood"
+    }
+  },
+  {
+    "pk": 4, 
+    "model": "loos.loo", 
+    "fields": {
+      "lat": 52.684219, 
+      "lon": -1.828848, 
+      "name": "Dam Street, Lichfield"
+    }
+  },{
+    "pk": 5, 
+    "model": "loos.loo", 
+    "fields": {
+      "lat": 52.68366064510615, 
+      "lon": -1.8317341804504395, 
+      "name": "Bird Street/Swan Road, Lichfield"
+    }
+  },
+  {
+    "pk": 6, 
+    "model": "loos.loo", 
+    "fields": {
+      "lat": 52.680697, 
+      "lon": -1.832072, 
+      "name": "The Friary, Lichfield"
+    }
+  },
+  {
+    "pk": 7, 
+    "model": "loos.loo", 
+    "fields": {
+      "lat": 52.681676, 
+      "lon": -1.825087, 
+      "name": "The Bus Station, Lichfield"
+    }
+  }
+]

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+	<name>Lichfield District Public Toilets</name>
+	<description>Public Toilets in Lichfield District</description>
+	<Style id="style1">
+		<IconStyle>
+			<Icon>
+			<href>http://google-maps-icons.googlecode.com/files/toilets.png</href>
+
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>Sankey's Corner, Chase Terrace </name>
+		<description><![CDATA[<ul><li>Open between 7am and 6pm and unattended</li><li>Male WC   with baby changing facilities</li><li>Female WC with baby changing facilities</li><li>Disabled WC</li></ul>]]></description>
+		<styleUrl>#style1</styleUrl>
+		<Point>
+			<coordinates>-1.9348329305648804, 52.6825321893439</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>High Street, Chasetown </name>
+		<description><![CDATA[<ul>  <li>Open between 7am and 6pm and unattended</li>  <li>Male WC   with baby changing facilities</li>  <li>Female WC with baby changing facilities</li>  <li>Disabled WC  </li></ul>]]></description>
+		<styleUrl>#style1</styleUrl>
+		<Point>
+			<coordinates>-1.9340980052947998, 52.66961303357292</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Swan Island, Burntwood </name>
+		<description><![CDATA[<ul><li>Open between 7am and 6pm and unattended</li><li>Communal Male / Female and disabled WC facility </li><li>No mother and baby facilities  </li></ul>]]></description>
+		<styleUrl>#style1</styleUrl>
+		<Point>
+			<coordinates>-1.90687894821167, 52.67836933380704</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Dam Street, Lichfield </name>
+		<description><![CDATA[<ul><li>Attended and open between 9am and 6pm, seven days a week</li><li>Male W C</li><li>Female W C</li><li>Disabled W  C </li><li>Mother and baby facilities accessible to both male and female parents</li></ul>]]></description>
+		<styleUrl>#style1</styleUrl>
+		<Point>
+			<coordinates>-1.828848, 52.684219</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Bird Street/Swan Road, Lichfield</name>
+		<description><![CDATA[<ul>					  <li>Open between 9am and 6pm and unattended</li>				      <li>Cleansing is carried out by the attendants at the Dam Street facilities</li>				      <li>Male W C</li>				      <li>Female W C</li>				      <li>Disabled W C</li>				      <li>No mother and baby facilities at this site			          </li>					</ul>]]></description>
+		<styleUrl>#style1</styleUrl>
+		<Point>
+			<coordinates>-1.8317341804504395, 52.68366064510615</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>The Friary, Lichfield</name>
+		<description><![CDATA[<ul>					  <li>Attended and open between 8am and 6pm, seven days a week</li>				     <li>Male W C</li>					  <li>Female W C</li>					  <li>Disabled W C</li><li>Mother and baby facilities accessible to both male and female parents</li>
+				    </ul>]]></description>
+		<styleUrl>#style1</styleUrl>
+		<Point>
+			<coordinates>-1.832072, 52.680697</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>The Bus Station, Lichfield</name>
+		<description><![CDATA[<ul>					  <li>Attended and open between 7am and 6pm, seven days a week</li>				      <li>Male W C</li>					  <li>Female W C</li>					  <li>Disabled W C</li>					  <li>Mother and baby facilities accessible to both male and female parents</li>					</ul>]]></description>
+		<styleUrl>#style1</styleUrl>
+		<Point>
+			<coordinates>-1.825087, 52.681676</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>
