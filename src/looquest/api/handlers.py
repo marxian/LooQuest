@@ -30,10 +30,12 @@ class LooHandler(BaseHandler):
 class LooSpotHandler(BaseHandler):
     allowed_methods = ('GET', 'POST',)
     model = LooSpot
+    is_anonymous = True
     
     def read(self, request):
         return LooSpot.objects.all()
-        
+    
+    #Given that we allow anonymous writes we'd better throttle this
     @validate(LooSpotForm)
     def create(self, request):
         request.form.save()
