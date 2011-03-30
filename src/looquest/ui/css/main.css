@@ -72,7 +72,7 @@ div#container {
 }
 
 pre {
-	font: 8px 'CPMono_v07Light', Arial, sans-serif;
+	font: 8px 'CPMono_v07Plain', Arial, sans-serif;
 }
 
 #output {
@@ -81,7 +81,7 @@ pre {
 }
 
 #output p.msg {
-	font: 18px/27px 'CPMono_v07Light', Arial, sans-serif;
+	font: 18px/27px 'CPMono_v07Plain', Arial, sans-serif;
 	color: green;
 }
 

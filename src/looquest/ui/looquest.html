@@ -7,6 +7,9 @@
     <meta name="description" content="">
     <meta name="author" content="Rupert, www.neontribe.co.uk">
     
+    <!-- Modernize -->
+    <script src="/ui/js/modernizr-1.7.min.js"></script>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<link rel="stylesheet" media="screen" href="/ui/css/main.css" />
@@ -52,6 +55,7 @@ _MMMMMMM  YMMMMM9   YMMMMM9    YMMMM9     YMMM9MM_ YMMMM9  MYMMMM9    YMMM9
         src="http://maps.google.co.uk/maps/api/js?sensor=true">
     </script>
     <script>
+        
     	var looquest = {}; 
 		looquest.cur_lat = 52.68217445952886;
 		looquest.cur_lon = -1.8188327550888062;
@@ -63,6 +67,20 @@ _MMMMMMM  YMMMMM9   YMMMMM9    YMMMM9     YMMM9MM_ YMMMM9  MYMMMM9    YMMM9
 		looquest.output = $('#output');
 		looquest.entry = $('#entry');
 		looquest.options = $('#options');
+		
+		if (Modernizr.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                function(pos){
+                    looquest.cur_lat = pos.coords.latitude;
+                    looquest.cur_lon = pos.coords.longitude;
+                }, 
+                function(){
+                    alert("Can't find your location. Placing you somewhere in Lichfield");
+                }
+            );
+        } else {
+            alert("Can't find your location. Placing you somewhere in Lichfield");
+        }
 		
 		
 		looquest.api.closest_loo = function(callback){
@@ -77,7 +95,6 @@ _MMMMMMM  YMMMMM9   YMMMMM9    YMMMM9     YMMM9MM_ YMMMM9  MYMMMM9    YMMM9
 				statusCode: {
 					200: function(data){
 						looquest.closest = data;
-						console.log(looquest.closest);
 						callback();
 					},
 					500: function(){
@@ -125,7 +142,6 @@ _MMMMMMM  YMMMMM9   YMMMMM9    YMMMM9     YMMM9MM_ YMMMM9  MYMMMM9    YMMM9
 		};
 		
 		looquest.ui.keybindings = function(event){
-			console.log(event.keyCode);
 			switch(event.keyCode)
 			{
 				case 76: // Key: L - Look for the nearest loo
@@ -154,7 +170,7 @@ _MMMMMMM  YMMMMM9   YMMMMM9    YMMMM9     YMMM9MM_ YMMMM9  MYMMMM9    YMMM9
 		};
 		
 		looquest.ui.unbound_key = function(){
-			console.log('unbound key');
+			alert('Unrecognized Command');
 		};
 		
 		looquest.ui.scroll_output = function(){
@@ -207,7 +223,6 @@ _MMMMMMM  YMMMMM9   YMMMMM9    YMMMM9     YMMM9MM_ YMMMM9  MYMMMM9    YMMM9
 				looquest.ui.show_description(desc);
 				
 				looquest.ui.show_options("commands: 't' to travel - 'c' to create a loo ");
-				console.log(looquest.route);
 			});
 		};
 		
