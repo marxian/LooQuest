@@ -2,7 +2,7 @@
 import os
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 STATIC_DOC_ROOT = os.path.normpath(os.path.join(PROJECT_ROOT, 'ui'))
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
